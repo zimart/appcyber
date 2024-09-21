@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_1dadec41-0ddf-4e81-9823-322055ba84d3",
+  "id": "Screeny_inventory_html",
+  "unpublishedCollection": {
+    "name": "html",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

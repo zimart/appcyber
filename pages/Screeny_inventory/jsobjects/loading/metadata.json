@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66db510001b5f41415619b59_753070db-2083-4a35-a8b9-19e9ef1a676b",
+  "id": "Screeny_inventory_loading",
+  "unpublishedCollection": {
+    "name": "loading",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
