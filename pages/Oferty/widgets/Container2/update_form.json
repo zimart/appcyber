@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 45,
+  "bottomRow": 38,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {
@@ -95,19 +95,7 @@
       "key": "schema.__root_schema__.children.numeroferty.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.numeroferty.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.numeroferty.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.fk_klienci_oferty_id.defaultValue"
@@ -177,6 +165,24 @@
     },
     {
       "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -211,7 +217,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_id_klient.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 45,
+  "originalBottomRow": 38,
   "originalTopRow": 4,
   "parentColumnSpace": 16.3125,
   "parentId": "x3oj14smam",
@@ -333,14 +339,14 @@
           "isDisabled": false,
           "isFilterable": false,
           "isRequired": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
-          "options": "[{\"label\":\"Blue\",\"value\":\"BLUE\"},{\"label\":\"Green\",\"value\":\"GREEN\"},{\"label\":\"Red\",\"value\":\"RED\"}]",
+          "options": "{{pobierzkategorie.data.map( (obj) =>{ return  {'label': obj.nazwakategorii, 'value': obj.nazwakategorii } })}}",
           "originalIdentifier": "kategoria",
-          "position": 2,
+          "position": 7,
           "serverSideFiltering": false,
-          "sourceData": "Plisy"
+          "sourceData": "[\"Screeny\",\"Plisy\"]"
         },
         "klient": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -357,7 +363,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "klient",
@@ -379,12 +385,12 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Numeroferty",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "numeroferty",
           "position": 6,
-          "sourceData": "2-87"
+          "sourceData": "OF/2024/09/101"
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -438,7 +444,9 @@
     "borderRadius": "0px",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "SECONDARY"
+    "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "saved"
   },
   "title": "Aktualizacja oferty ID: {{data_table.selectedRow.id_oferta}}",
   "topRow": 4,

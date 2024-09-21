@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM oferty\nWHERE klient like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id_oferta'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM oferty\nWHERE temat like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id_oferta'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,6 +22,11 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
     "name": "SelectQuery",
     "pageId": "Oferty",

@@ -2,9 +2,9 @@
   "animateLoading": true,
   "autoGenerateForm": true,
   "backgroundColor": "#fff",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "borderWidth": "",
-  "bottomRow": 41,
+  "bottomRow": 27,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -141,9 +141,6 @@
       "key": "schema.__root_schema__.children.temat.borderRadius"
     },
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.defaultValue"
     },
     {
@@ -154,15 +151,15 @@
     },
     {
       "key": "schema.__root_schema__.children.dataoferty.defaultValue"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "onSubmit"
@@ -194,7 +191,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{Insert_oferty.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
-  "originalBottomRow": 41,
+  "originalBottomRow": 34,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
@@ -231,7 +228,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Data oferty",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "dataoferty",
@@ -294,7 +291,7 @@
           "isDisabled": false,
           "isFilterable": false,
           "isRequired": true,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
           "options": "{{pobierzkategorie.data.map( (obj) =>{ return  {'label': obj.nazwakategorii, 'value': obj.nazwakategorii } })}}",
@@ -397,10 +394,12 @@
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
-    "borderRadius": "0.375rem",
+    "borderRadius": "0px",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY",
+    "iconAlign": "left",
+    "iconName": "saved",
     "placement": "CENTER"
   },
   "title": "Dodaj ofertę",

@@ -5,8 +5,8 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 128,
-  "bottomRowBeforeCollapse": 122,
+  "bottomRow": 134,
+  "bottomRowBeforeCollapse": 128,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "ARRAY": {
@@ -320,15 +320,6 @@
       "key": "schema.__root_schema__.children.rodzajmotor.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.seq.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.seq.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.seq.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.fk_oferty_inventory_id.defaultValue"
     },
     {
@@ -363,6 +354,33 @@
     },
     {
       "key": "schema.__root_schema__.children.concat.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.vat.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.vat.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.vat.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.seq.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.seq.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.seq.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -397,8 +415,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 128,
-  "originalTopRow": 39,
+  "originalBottomRow": 134,
+  "originalTopRow": 45,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -440,6 +458,27 @@
           "originalIdentifier": "cena",
           "position": 5,
           "sourceData": "1118"
+        },
+        "cenanetto": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "cenanetto",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cenanetto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "cenanetto",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Cenanetto",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "cenanetto",
+          "position": 27
         },
         "concat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -842,9 +881,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.seq))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "seq",
           "isCustomField": false,
@@ -855,8 +894,8 @@
           "label": "Seq",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "seq",
-          "position": 22,
-          "sourceData": "1"
+          "position": 28,
+          "sourceData": 11
         },
         "skrzynka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -968,6 +1007,27 @@
           "position": 13,
           "sourceData": "[value-15]"
         },
+        "vat": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "vat",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.vat))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "vat",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Vat",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "vat",
+          "position": 28
+        },
         "wkladka": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "wkladka",
@@ -1044,8 +1104,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{data_table.selectedRow.id}}",
-  "topRow": 39,
-  "topRowBeforeCollapse": 33,
+  "topRow": 45,
+  "topRowBeforeCollapse": 39,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

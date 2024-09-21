@@ -20,7 +20,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
@@ -48,10 +48,11 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 52,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "tn947dx4eb",
-  "widgetName": "Input11"
+  "widgetName": "cenabazowasystemu"
 }

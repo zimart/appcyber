@@ -60,7 +60,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n}}\n",
+  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => \nstoreValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n}}\n",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 4,

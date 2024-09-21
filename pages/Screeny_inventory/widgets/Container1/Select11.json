@@ -2,15 +2,12 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 110,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{\n            {\n              label: Select2.options[0].label,\n              value: Select2.options[0].value\n            }\n          }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
-      "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
+      "key": "accentColor"
     },
     {
       "key": "borderRadius"
@@ -20,43 +17,46 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "y205dyxcn1",
+  "isVisible": "true",
+  "key": "mdr1tx12yu",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "WYBIERZ KATEGORIĘ",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 105,
+  "mobileBottomRow": 13,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 98,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "optionLabel": "label",
-  "optionValue": "value",
-  "originalBottomRow": 110,
-  "originalTopRow": 103,
-  "parentId": "0",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 19.90625,
+  "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "WYBIERZ KATEGORIĘ",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 27,
   "serverSideFiltering": false,
-  "sourceData": "{{zapytaj_klient.data.map( (obj) =>{ return  {'label': obj.accountname, 'value': obj.accountname } })}}",
-  "topRow": 103,
+  "sourceData": "[\n  {\n    \"name\": \"SCREENY\",\n    \"code\": \"SCREENY\"\n  },\n  {\n    \"name\": \"PLISY\",\n    \"code\": \"PLISY\"\n  },\n  {\n    \"name\": \"Red\",\n    \"code\": \"RED\"\n  }\n]",
+  "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "i8etiucd4n",
-  "widgetName": "Select2"
+  "widgetId": "t0efz1pega",
+  "widgetName": "Select11"
 }
