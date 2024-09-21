@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 132,
+  "bottomRow": 143,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -237,8 +237,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 132,
-  "originalTopRow": 45,
+  "originalBottomRow": 143,
+  "originalTopRow": 56,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1271,7 +1271,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
-  "topRow": 45,
+  "topRow": 56,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
