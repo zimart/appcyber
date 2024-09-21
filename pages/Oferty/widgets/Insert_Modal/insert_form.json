@@ -4,7 +4,7 @@
   "backgroundColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 58,
+  "bottomRow": 41,
   "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
@@ -90,31 +90,19 @@
       "key": "sourceData"
     },
     {
-      "key": "schema.__root_schema__.children.klient.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.klient.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.klient.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.numeroferty.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.numeroferty.borderRadius"
     },
     {
+      "key": "schema.__root_schema__.children.kategoria.options"
+    },
+    {
       "key": "schema.__root_schema__.children.kategoria.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.kategoria.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_klient.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_klient.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.fk_klienci_oferty_id.defaultValue"
@@ -126,13 +114,25 @@
       "key": "schema.__root_schema__.children.fk_klienci_oferty_id.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.dataoferty.defaultValue"
+      "key": "schema.__root_schema__.children.id_klient.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_klient.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.dataoferty.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.dataoferty.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.klient.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.klient.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.klient.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.temat.accentColor"
@@ -144,12 +144,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.kategoria.options"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "schema.__root_schema__.defaultValue"
     },
     {
@@ -157,9 +151,12 @@
     },
     {
       "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.dataoferty.defaultValue"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
@@ -169,6 +166,9 @@
     },
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.dataoferty.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -183,7 +183,7 @@
     }
   ],
   "fieldLimitExceeded": false,
-  "fixedFooter": true,
+  "fixedFooter": false,
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
@@ -193,7 +193,9 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{Insert_oferty.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "originalBottomRow": 41,
+  "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
@@ -221,16 +223,16 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (datepobierz.dzisiaj.data))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{datepobierz.dzisiaj.data}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "dataoferty",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Dataoferty",
+          "label": "Data oferty",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "dataoferty",
           "position": 6,
@@ -251,7 +253,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Fk Klienci Oferty Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fk_klienci_oferty_id",
@@ -272,7 +274,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_klient",
@@ -280,18 +282,18 @@
         },
         "kategoria": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "kategoria",
+          "accessor": "kategoriainput",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
           "defaultValue": "",
-          "fieldType": "Select",
+          "fieldType": "Multiselect",
           "identifier": "kategoria",
           "isCustomField": false,
           "isDisabled": false,
           "isFilterable": false,
-          "isRequired": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
@@ -315,7 +317,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "klient",
@@ -337,7 +339,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Numeroferty",
           "labelTextSize": "0.875rem",
           "onTextChanged": "{{numeroferty.miesiac();}}",
@@ -347,7 +349,7 @@
         },
         "temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "temat",
+          "accessor": "tematinput",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
@@ -390,6 +392,7 @@
     }
   },
   "scrollContents": true,
+  "shouldScrollContents": true,
   "showReset": false,
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
@@ -400,7 +403,7 @@
     "buttonVariant": "PRIMARY",
     "placement": "CENTER"
   },
-  "title": "",
+  "title": "Dodaj ofertę",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

@@ -1,11 +1,11 @@
 {
   "gitSyncId": "66db510001b5f41415619b59_3eae09ad-e733-458c-b5be-4ca68f8a7114",
-  "id": "Oferty_InsertQuery",
+  "id": "Oferty_Insert_oferty",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO oferty (\n\ttemat,\n\tklient,\n\tnumeroferty,\n\tkategoria,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.temat}}',\n\t'{{insert_form.formData.klient}}',\n\t'{{insert_form.formData.numeroferty}}',\n\t'{{insert_form.formData.kategoria}}',\n\t'{{insert_form.formData.id_klient}}',\n\t'{{insert_form.formData.fk_klienci_oferty_id}}',\n\t'{{insert_form.formData.dataoferty}}');",
+      "body": "INSERT INTO oferty (\n\ttemat,\n\tklient,\n\tnumeroferty,\n\tkategoria,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.tematinput}}',\n\t'{{insert_form.formData.klient}}',\n\t'{{insert_form.formData.numeroferty}}',\n\t'{{insert_form.formData.kategoriainput}}',\n\t'{{insert_form.formData.id_klient}}',\n\t'{{appsmith.URL.queryParams.id_klienta}}',\n\t'{{insert_form.formData.dataoferty}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "InsertQuery",
+    "name": "Insert_oferty",
     "pageId": "Oferty",
     "userSetOnLoad": true
   }

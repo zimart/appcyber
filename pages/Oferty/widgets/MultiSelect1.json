@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 109,
+  "bottomRow": 163,
   "boxShadow": "none",
   "defaultOptionValue": [
     "GREEN",
@@ -39,6 +39,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 163,
+  "originalTopRow": 156,
   "parentColumnSpace": 20.53125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -61,7 +63,7 @@
       "name": "Red"
     }
   ],
-  "topRow": 102,
+  "topRow": 156,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
   "widgetId": "v0zcax50mr",

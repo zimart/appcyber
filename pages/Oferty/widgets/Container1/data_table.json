@@ -1,9 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": false,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderColor": "rgba(46, 61, 73, 0.33)",
+  "borderRadius": "0px",
+  "borderWidth": "",
   "bottomRow": 90,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -40,9 +42,9 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726679348443,
+  "columnUpdatedAt": 1726932297718,
   "columnWidthMap": {
-    "customColumn1": 60,
+    "customColumn1": 102,
     "customColumn3": 76,
     "customColumn4": 76,
     "kategoria": 119,
@@ -79,7 +81,46 @@
   "displayName": "Table",
   "dynamicBindingPathList": [
     {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.kategoria.computedValue"
+    },
+    {
+      "key": "primaryColumns.fk_klienci_oferty_id.computedValue"
+    },
+    {
       "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.dataoferty.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn3.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn3.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn3.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn4.boxShadow"
+    },
+    {
+      "key": "primaryColumns.numeroferty.computedValue"
+    },
+    {
+      "key": "primaryColumns.id_klient.computedValue"
     },
     {
       "key": "primaryColumns.id_oferta.computedValue"
@@ -88,55 +129,10 @@
       "key": "primaryColumns.klient.computedValue"
     },
     {
-      "key": "primaryColumns.numeroferty.computedValue"
-    },
-    {
-      "key": "primaryColumns.kategoria.computedValue"
-    },
-    {
-      "key": "primaryColumns.id_klient.computedValue"
-    },
-    {
-      "key": "primaryColumns.fk_klienci_oferty_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.dataoferty.computedValue"
-    },
-    {
       "key": "primaryColumns.temat.computedValue"
     },
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn3.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn3.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn3.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn4.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn4.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn4.buttonColor"
-    },
-    {
-      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
@@ -179,7 +175,7 @@
   "key": "zba5qel0au",
   "label": "Data",
   "labelTextSize": "0.875rem",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
@@ -191,7 +187,7 @@
   "primaryColumnId": "id_oferta",
   "primaryColumns": {
     "customColumn1": {
-      "alias": "lp.",
+      "alias": "Lp.",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
@@ -212,7 +208,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "lp.",
+      "label": "Lp.",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn1",
@@ -354,6 +350,7 @@
       "horizontalAlignment": "LEFT",
       "id": "dataoferty",
       "index": 7,
+      "inputFormat": "YYYY-MM-DD",
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -362,9 +359,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "dataoferty",
+      "label": "Data",
       "notation": "standard",
       "originalId": "dataoferty",
+      "outputFormat": "YYYY-MM-DD",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -429,7 +427,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id_klient",
       "notation": "standard",
       "originalId": "id_klient",
@@ -498,7 +496,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "kategoria",
+      "label": "Kategoria",
       "notation": "standard",
       "originalId": "kategoria",
       "sticky": "",
@@ -532,7 +530,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "klient",
+      "label": "Klient",
       "notation": "standard",
       "originalId": "klient",
       "sticky": "",
@@ -566,7 +564,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "numeroferty",
+      "label": "Numer",
       "notation": "standard",
       "originalId": "numeroferty",
       "sticky": "",
@@ -600,7 +598,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "temat",
+      "label": "Temat",
       "notation": "standard",
       "originalId": "temat",
       "sticky": "",
@@ -621,6 +619,7 @@
   "topRow": 11,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
+  "variant": "VARIANT3",
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "uji69u6swx",

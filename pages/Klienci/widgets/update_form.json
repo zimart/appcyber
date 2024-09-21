@@ -489,7 +489,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row accountid: {{data_table.selectedRow.accountid}}",
+  "title": "Aktualizuj: ID klienta {{data_table.selectedRow.accountid}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",

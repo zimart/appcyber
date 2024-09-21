@@ -7,10 +7,10 @@ INSERT INTO oferty (
 	fk_klienci_oferty_id,
 	dataoferty)
 VALUES (
-	'{{insert_form.formData.temat}}',
+	'{{insert_form.formData.tematinput}}',
 	'{{insert_form.formData.klient}}',
 	'{{insert_form.formData.numeroferty}}',
-	'{{insert_form.formData.kategoria}}',
+	'{{insert_form.formData.kategoriainput}}',
 	'{{insert_form.formData.id_klient}}',
-	'{{insert_form.formData.fk_klienci_oferty_id}}',
+	'{{appsmith.URL.queryParams.id_klienta}}',
 	'{{insert_form.formData.dataoferty}}');

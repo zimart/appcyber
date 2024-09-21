@@ -3,7 +3,7 @@
   "allowClear": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 101,
+  "bottomRow": 188,
   "boxShadow": "none",
   "defaultOptionValue": [
     "GREEN"
@@ -62,8 +62,8 @@
       "value": "RED"
     }
   ],
-  "originalBottomRow": 101,
-  "originalTopRow": 94,
+  "originalBottomRow": 188,
+  "originalTopRow": 181,
   "parentColumnSpace": 20.53125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -71,7 +71,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
-  "topRow": 94,
+  "topRow": 181,
   "type": "MULTI_SELECT_TREE_WIDGET",
   "version": 1,
   "widgetId": "23bsf0hcay",
