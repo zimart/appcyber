@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_e6cf066f-3cf0-4aee-a5c1-d0e6e55d71ce",
-  "id": "Screeny_inventory_doplata.kolor",
+  "gitSyncId": "66efc516595f5300cd79eedb_9f73022e-f671-41ca-ba7f-4795b90e2bec",
+  "id": "Screeny_inventory_doplata.tkanina",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "doplata.kolor",
-    "name": "kolor",
+    "fullyQualifiedName": "doplata.tkanina",
+    "name": "tkanina",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": true
   }

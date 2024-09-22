@@ -6,7 +6,7 @@
   "bottomRow": 14,
   "bottomRowBeforeCollapse": 14,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{doplata.tkanina.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",

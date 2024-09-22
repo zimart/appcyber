@@ -27,7 +27,11 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
@@ -50,6 +54,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
+  "onTextChanged": "{{doplata.tkanina();}}",
   "originalBottomRow": 14,
   "originalTopRow": 7,
   "parentColumnSpace": 18.65625,
