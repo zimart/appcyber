@@ -1,4 +1,9 @@
 export default {
+
+  calculateArea2: function (cena) {
+    return cena;
+  },
+
 	
 netto: function () {
 	
