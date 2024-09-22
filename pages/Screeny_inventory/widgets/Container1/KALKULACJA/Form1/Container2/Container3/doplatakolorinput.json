@@ -19,12 +19,18 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,12 +40,12 @@
   ],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": false,
+  "isDisabled": "{{doplatakolorinput.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{poledoplatykolor > 0}}",
+  "isVisible": "{{Input17.text === \"tak\"}}",
   "key": "q37nnhimv1",
-  "label": "Dopłata do koloru",
+  "label": "Dopłata do koloru %",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

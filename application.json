@@ -83,10 +83,6 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_kolor2",
-      "isDefault": false
-    },
-    {
       "id": "Screeny_napedy",
       "isDefault": false
     },
@@ -104,6 +100,10 @@
     },
     {
       "id": "Oferty2",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_kolor3",
       "isDefault": false
     }
   ],

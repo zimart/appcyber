@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_229f45f8-d46a-45b5-90ec-15ec40bb5e82",
-  "id": "Screeny_kolor2_SelectQuery",
+  "gitSyncId": "66efc516595f5300cd79eedb_dfedf755-6eae-478b-8827-2a58bf7bf6c9",
+  "id": "Screeny_kolor3_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Screeny_kolor2",
+    "pageId": "Screeny_kolor3",
     "userSetOnLoad": true
   }
 }

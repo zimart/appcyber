@@ -165,6 +165,15 @@
     },
     {
       "key": "schema.__root_schema__.children.linia.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -221,6 +230,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "czydoplata": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "czydoplata",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.czydoplata))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "czydoplata",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Czydoplata",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "czydoplata",
+          "position": 4,
+          "sourceData": ""
+        },
         "doplata": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "doplata",

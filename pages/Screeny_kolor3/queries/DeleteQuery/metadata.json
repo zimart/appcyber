@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_694ecc8b-ae72-4e3e-93f1-f3ce16b5bcad",
-  "id": "Screeny_kolor2_DeleteQuery",
+  "gitSyncId": "66efc516595f5300cd79eedb_53eb91e3-a907-4d8a-a7c8-de18c3804cd0",
+  "id": "Screeny_kolor3_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Screeny_kolor2",
+    "pageId": "Screeny_kolor3",
     "userSetOnLoad": false
   }
 }

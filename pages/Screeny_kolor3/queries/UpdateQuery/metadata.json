@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_e67392ce-e8dc-4f8c-b242-400765154292",
-  "id": "Screeny_kolor_UpdateQuery",
+  "gitSyncId": "66efc516595f5300cd79eedb_6764993c-e934-486b-a4be-d7769a03aed5",
+  "id": "Screeny_kolor3_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
     "name": "UpdateQuery",
-    "pageId": "Screeny_kolor",
+    "pageId": "Screeny_kolor3",
     "userSetOnLoad": false
   }
 }

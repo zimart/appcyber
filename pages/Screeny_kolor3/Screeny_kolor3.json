@@ -1,7 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_a2ee876e-817a-4b3f-866a-991b4bf5edc9",
+  "gitSyncId": "66efc516595f5300cd79eedb_ce77aebd-eeac-4dd7-88d8-cd4e172e32c8",
   "unpublishedPage": {
-    "isHidden": true,
     "layouts": [
       {
         "dsl": {
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny_kolor2",
-    "slug": "screeny-kolor2"
+    "name": "Screeny_kolor3",
+    "slug": "screeny-kolor3"
   }
 }

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 89,
+  "bottomRow": 50,
   "bottomRowBeforeCollapse": 50,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -45,7 +45,7 @@
   "rightColumn": 64,
   "text": "DODAJ POZYCJĘ",
   "tooltip": "",
-  "topRow": 85,
+  "topRow": 46,
   "topRowBeforeCollapse": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,

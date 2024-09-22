@@ -27,6 +27,7 @@
     "linia",
     "doplata",
     "system",
+    "czydoplata",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -34,7 +35,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726322829139,
+  "columnUpdatedAt": 1726992218092,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -100,6 +101,9 @@
     },
     {
       "key": "primaryColumns.system.computedValue"
+    },
+    {
+      "key": "primaryColumns.czydoplata.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -170,6 +174,40 @@
       "menuColor": "#03B365",
       "onClick": "{{showModal('Delete_Modal')}}",
       "sticky": "right",
+      "width": 150
+    },
+    "czydoplata": {
+      "alias": "czydoplata",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"czydoplata\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "czydoplata",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "czydoplata",
+      "notation": "standard",
+      "originalId": "czydoplata",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "doplata": {

@@ -2,9 +2,10 @@
   "animateLoading": true,
   "autoGenerateForm": true,
   "backgroundColor": "#fff",
+  "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
-  "bottomRow": 58,
+  "borderWidth": "0",
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -93,16 +94,16 @@
       "key": "sourceData"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
+      "key": "title"
     },
     {
       "key": "submitButtonStyles.buttonColor"
@@ -111,10 +112,16 @@
       "key": "submitButtonStyles.borderRadius"
     },
     {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
-      "key": "resetButtonStyles.borderRadius"
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     },
     {
       "key": "schema.__root_schema__.children.kolorm.defaultValue"
@@ -151,12 +158,24 @@
     },
     {
       "key": "schema.__root_schema__.children.system.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.czydoplata.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+    },
+    {
+      "key": "isVisible"
     },
     {
       "key": "borderRadius"
@@ -175,15 +194,15 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
   "parentColumnSpace": 16.3125,
-  "parentId": "9rhv3ioohq",
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
@@ -202,14 +221,36 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "czydoplata": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "czydoplata",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.czydoplata))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "czydoplata",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Czydoplata",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "czydoplata",
+          "position": 4,
+          "sourceData": ""
+        },
         "doplata": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "doplata",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.doplata))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.doplata))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "doplata",
@@ -221,16 +262,17 @@
           "label": "Doplata",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "doplata",
-          "position": 2
+          "position": 2,
+          "sourceData": null
         },
         "kolorm": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "kolorm",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kolorm))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kolorm))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "kolorm",
@@ -243,16 +285,16 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kolorm",
           "position": 0,
-          "sourceData": "RAL 9006"
+          "sourceData": "ULTRA BIALY 22B Sky Roll"
         },
         "linia": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "linia",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.linia))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.linia))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "linia",
@@ -265,16 +307,16 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "linia",
           "position": 1,
-          "sourceData": "PREMIUM"
+          "sourceData": "STANDARD"
         },
         "system": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "system",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.system))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.system))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "system",
@@ -287,11 +329,11 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "system",
           "position": 3,
-          "sourceData": "EASY ZIIIP"
+          "sourceData": "SRS90 ZiiiP-E"
         }
       },
       "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
       "fieldType": "Object",
       "identifier": "__root_schema__",
       "isCustomField": false,
@@ -312,18 +354,18 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id\")}}",
-  "submitButtonLabel": "Submit",
+  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
+  "title": "Update Row id: {{data_table.selectedRow.id}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
-  "widgetId": "w10l8merz2",
-  "widgetName": "insert_form"
+  "widgetId": "6g4ewsx2v0",
+  "widgetName": "update_form"
 }
