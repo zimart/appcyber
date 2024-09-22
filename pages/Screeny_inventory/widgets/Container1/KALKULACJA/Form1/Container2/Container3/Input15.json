@@ -6,7 +6,7 @@
   "bottomRow": 14,
   "bottomRowBeforeCollapse": 14,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.doplatakolor3}}",
+  "defaultText": "{{doplata.kolor.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -33,7 +33,7 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{doplatakolorinput.text>0}}",
+  "isVisible": "{{Input17.text===\"tak\"}}",
   "key": "2t39cnlom2",
   "label": "Koszt dopłaty - kolor",
   "labelAlignment": "left",

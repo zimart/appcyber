@@ -32,7 +32,7 @@
   "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": "{{sku_input.isValid}}",
   "key": "2t39cnlom2",
   "label": "Cena napędu",

@@ -2,6 +2,7 @@ export default {
 	
 kolor: function () {
 var wartoscdoplaty = doplatakolorinput.text;
+	
 var cenasystemubaza = cena_systemu.text;
 //var skrzynka = Select8.selectedOptionValue;
 var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));

@@ -18,19 +18,19 @@
       "key": "defaultText"
     },
     {
-      "key": "isVisible"
+      "key": "isDisabled"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "isDisabled"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,7 +43,7 @@
   "isDisabled": "{{doplatakolorinput.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Input17.text === \"tak\"}}",
+  "isVisible": "{{Input17.text===\"tak\"}}",
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru %",
   "labelAlignment": "left",

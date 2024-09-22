@@ -23,14 +23,16 @@ INSERT INTO screeny_inventory (wysokosc,
 															 seq,
 															 fk_oferty_inventory_id,
 															 powierzchnia,
-															 concat)
+															 concat,
+															 rodzajpomiaru,
+															 procentdoplatakolor)
   VALUES ('{{wysokosc_input.text}}',
 					'{{szerokosc_input.text}}', 
 					{{index_szer_input.text}},
 					{{index_wys_input.text}}, 
 					'{{sku_input.text}}', 
 					'{{cenabazowasystemu.text}}',
-					'',
+					'{{Input15.text}}',
 					'', 
 					'',
 					'{{Select1.selectedOptionValue}}',
@@ -49,4 +51,7 @@ INSERT INTO screeny_inventory (wysokosc,
 					'',
 					'{{appsmith.URL.queryParams.id_oferta}}',
 					'{{powierzchnia.text}}',
-					{{concat1.text}});
+					'{{concat1.text}}',
+				  '{{rodzajwysokosci.selectedOptionLabel}}',
+					'{{doplatakolorinput.text}}'
+				 );

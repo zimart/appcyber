@@ -381,6 +381,24 @@
     },
     {
       "key": "schema.__root_schema__.children.doplatatkanina.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.procentdoplatakolor.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.procentdoplatakolor.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.procentdoplatakolor.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajpomiaru.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajpomiaru.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajpomiaru.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -408,7 +426,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.id}}",
+  "isVisible": "{{!!tabela_screeny_inventory_id.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
   "leftColumn": 49,
@@ -809,6 +827,27 @@
           "position": 19,
           "sourceData": "0"
         },
+        "procentdoplatakolor": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "procentdoplatakolor",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.procentdoplatakolor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "procentdoplatakolor",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Procentdoplatakolor",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "procentdoplatakolor",
+          "position": 29
+        },
         "rabatmotor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "rabatmotor",
@@ -874,6 +913,27 @@
           "originalIdentifier": "rodzajmotor",
           "position": 21,
           "sourceData": "[value-23]"
+        },
+        "rodzajpomiaru": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "rodzajpomiaru",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rodzajpomiaru))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "rodzajpomiaru",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rodzajpomiaru",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "rodzajpomiaru",
+          "position": 30
         },
         "seq": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1095,7 +1155,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
+  "sourceData": "{{_.omit(tabela_screeny_inventory_id.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -1103,7 +1163,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row id: {{data_table.selectedRow.id}}",
+  "title": "Update Row id: {{tabela_screeny_inventory_id.selectedRow.id}}",
   "topRow": 56,
   "topRowBeforeCollapse": 56,
   "type": "JSON_FORM_WIDGET",
