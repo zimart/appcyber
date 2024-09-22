@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66efc516595f5300cd79eedb_68bd84e7-5440-46c7-ac6a-d1e4f9dadc3f",
+  "id": "Screeny_inventory_concat",
+  "unpublishedCollection": {
+    "name": "concat",
+    "pageId": "Screeny_inventory",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

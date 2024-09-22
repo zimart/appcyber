@@ -5,8 +5,8 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 129,
-  "bottomRowBeforeCollapse": 145,
+  "bottomRow": 132,
+  "bottomRowBeforeCollapse": 132,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "ARRAY": {
@@ -167,15 +167,6 @@
       "key": "schema.__root_schema__.children.skugen.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.cena.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.cena.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.cena.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.doplatakolor.defaultValue"
     },
     {
@@ -329,15 +320,6 @@
       "key": "schema.__root_schema__.children.powierzchnia.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.concat.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.concat.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.concat.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.cenanetto.defaultValue"
     },
     {
@@ -399,6 +381,24 @@
     },
     {
       "key": "schema.__root_schema__.children.rodzajpomiaru.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.concat.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.concat.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.concat.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.cena.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.cena.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.cena.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -433,8 +433,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 129,
-  "originalTopRow": 40,
+  "originalBottomRow": 132,
+  "originalTopRow": 43,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -474,8 +474,8 @@
           "label": "Cena",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cena",
-          "position": 5,
-          "sourceData": "1118"
+          "position": 30,
+          "sourceData": "897"
         },
         "cenanetto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -517,8 +517,8 @@
           "label": "Concat",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "concat",
-          "position": 26,
-          "sourceData": ""
+          "position": 30,
+          "sourceData": "2000"
         },
         "doplatakolor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1164,8 +1164,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{tabela_screeny_inventory_id.selectedRow.id}}",
-  "topRow": 40,
-  "topRowBeforeCollapse": 56,
+  "topRow": 43,
+  "topRowBeforeCollapse": 43,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

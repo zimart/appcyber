@@ -4,17 +4,14 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#831843",
   "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "isVisible"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -23,6 +20,9 @@
     },
     {
       "key": "onClick"
+    },
+    {
+      "key": "borderRadius"
     }
   ],
   "dynamicTriggerPathList": [
@@ -33,7 +33,7 @@
   "iconName": "plus",
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{Select8.isValid}}",
+  "isVisible": "{{Select8.isValid;szerokosc_input.text>0;wysokosc_input.text>0}}",
   "key": "sc24l1mhlp",
   "leftColumn": 32,
   "minWidth": 50,
