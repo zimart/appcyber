@@ -105,6 +105,10 @@
     {
       "id": "Screeny_kolor3",
       "isDefault": false
+    },
+    {
+      "id": "rozne-js",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

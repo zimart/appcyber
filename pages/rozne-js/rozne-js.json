@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_81fbe252-54ad-489b-aab3-bae40ffaeb84",
+  "gitSyncId": "66efc516595f5300cd79eedb_377840de-1497-4b2c-b54c-db376924fca3",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 3200,
+          "bottomRow": 760,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 890,
+          "minHeight": 770,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 1174,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 125,
+          "snapRows": 75,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Screeny_inventory",
-    "slug": "screeny-inventory"
+    "name": "rozne-js",
+    "slug": "rozne-js"
   }
 }

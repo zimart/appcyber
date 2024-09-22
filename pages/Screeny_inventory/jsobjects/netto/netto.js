@@ -1,16 +1,18 @@
 export default {
 
-  calculateArea2: function (cena) {
-    return cena;
+
+  calculateArea2: function (cena,doplatatkanina) {
+    return cena * doplatatkanina;
   },
 
 	
 netto: function () {
 	
-var cenasystemu = currentRow.cena;
-var doplatakolor = currentRow.doplatatkanina;
-var cenanetto = cenasystemu + doplatakolor;
-return cenanetto.toFixed(2);
+//var cenasystemu = 1;
+//var doplatakolor = currentRow.doplatatkanina;
+var cenanetto = tabela_inventory_id.data[curentRow].cena;
+var cenanetto2 = tabela_inventory_id.data[0].cena;
+return cenanetto;
 },
 	
 
