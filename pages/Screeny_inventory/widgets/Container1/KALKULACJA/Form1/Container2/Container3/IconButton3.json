@@ -42,7 +42,7 @@
   "mobileRightColumn": 33,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nclearStore())\n.then(() => storeValue('sku_value', tymczasowy.text))\n.then(() => danesku.run())\n.then(() => storeValue('cenasystemu', cena_systemu.text))\n.then(() => storeValue('wymaganynaped', wymaganamocnaped.text))\n.then(() => napedwybrany.run())\n.then(() => cenanapeduwybranego.run())\n.then(() => storeValue('modelnapedu', Input8.text))\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => doplata.kolor())\n.then(() => storeValue('doplatakolor3',poledoplatykolor.text ))\n.then(() => cenarazem.razem())\n}}",
+  "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => danesku.run())\n.then(() => storeValue('cenasystemu', cena_systemu.text))\n.then(() => storeValue('wymaganynaped', wymaganamocnaped.text))\n.then(() => napedwybrany.run())\n.then(() => cenanapeduwybranego.run())\n.then(() => storeValue('modelnapedu', Input8.text))\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => doplata.kolor())\n.then(() => storeValue('doplatakolor3',poledoplatykolor.text ))\n\n}}",
   "originalBottomRow": 6,
   "originalTopRow": 2,
   "parentColumnSpace": 18.6884765625,

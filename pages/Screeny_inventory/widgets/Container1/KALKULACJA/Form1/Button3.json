@@ -33,7 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje.run();\nresetWidget(\"index_szer_input\", true);\nclearStore();\ntabela_inventory_id.run()}}",
+  "onClick": "{{dodajpozycje.run();\nresetWidget(\"index_szer_input\", true);\ntabela_inventory_id.run();\nresetWidget(\"sku_input\", true);}}",
   "originalBottomRow": 50,
   "originalTopRow": 46,
   "parentId": "8jwyu0isum",
