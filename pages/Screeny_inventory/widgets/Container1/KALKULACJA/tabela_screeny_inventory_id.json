@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 114,
+  "bottomRow": 104,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -62,7 +62,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726996911602,
+  "columnUpdatedAt": 1727002002035,
   "columnWidthMap": {
     "concat": 174,
     "seq": 65.99999999999999,
@@ -246,8 +246,8 @@
   "onPageSizeChange": "{{tabela_inventory_id.run()}}",
   "onSearchTextChanged": "{{tabela_inventory_id.run()}}",
   "onSort": "{{tabela_inventory_id.run()}}",
-  "originalBottomRow": 114,
-  "originalTopRow": 56,
+  "originalBottomRow": 105,
+  "originalTopRow": 47,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1348,7 +1348,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
-  "topRow": 56,
+  "topRow": 46,
   "totalRecordsCount": "20",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

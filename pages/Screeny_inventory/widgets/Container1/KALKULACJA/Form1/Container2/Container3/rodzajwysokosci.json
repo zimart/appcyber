@@ -47,7 +47,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n}}",
+  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => powierzchnian.m2()) \n\n}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 7,

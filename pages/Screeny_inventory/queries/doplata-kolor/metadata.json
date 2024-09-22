@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "doplata.kolor",
     "name": "kolor",
     "pageId": "Screeny_inventory",

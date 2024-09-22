@@ -18,7 +18,16 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -41,6 +50,7 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 160,
   "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('powierzchniastore', powierzchnia.text);\ndoplata.tkanina();}}",
   "originalBottomRow": 167,
   "originalTopRow": 160,
   "parentColumnSpace": 20.5625,
