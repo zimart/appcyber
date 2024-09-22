@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -33,7 +37,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje.run();\nresetWidget(\"index_szer_input\", true);\ntabela_inventory_id.run();\nclearStore();\nresetWidget(\"Input15\", true);\nresetWidget(\"cenabazowasystemu\", true);}}",
+  "onClick": "{{dodajpozycje.run()\n.then(() => \nresetWidget(\"index_szer_input\", true))\n.then(() => \ntabela_inventory_id.run())\n.then(() => \nresetWidget(\"Input15\", true))\n.then(() => \nresetWidget(\"cenabazowasystemu\", true))\n.then(() => \nresetWidget(\"szerokosc_input\", true))\n.then(() => \nresetWidget(\"podawana_wysokosc_input\", true))\n.then(() => \nclearStore())}}",
   "originalBottomRow": 50,
   "originalTopRow": 46,
   "parentId": "8jwyu0isum",
