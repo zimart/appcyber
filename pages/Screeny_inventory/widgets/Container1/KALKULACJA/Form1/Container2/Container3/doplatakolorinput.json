@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
+  "bottomRowBeforeCollapse": 13,
   "boxShadow": "none",
   "defaultText": "{{doplatakolorzapytaj.data[0].doplata}}",
   "dynamicBindingPathList": [
@@ -15,9 +16,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -28,7 +37,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{poledoplatykolor > 0}}",
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru",
   "labelAlignment": "left",
@@ -46,6 +55,8 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "onTextChanged": "{{doplata.kolor();}}",
+  "originalBottomRow": 13,
+  "originalTopRow": 7,
   "parentColumnSpace": 19.0009765625,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,
@@ -56,6 +67,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 7,
+  "topRowBeforeCollapse": 7,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "43bia6gryi",

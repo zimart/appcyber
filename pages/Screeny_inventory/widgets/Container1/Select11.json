@@ -4,13 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.URL.queryParams.kategoria))(Select11.options, Select11.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",

@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultText": "{{appsmith.store.cenasystemu}}",
   "dynamicBindingPathList": [
@@ -15,16 +16,24 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{sku_input.isValid}}",
   "key": "2t39cnlom2",
   "label": "Cena bazowa systemu",
   "labelAlignment": "left",
@@ -41,6 +50,8 @@
   "mobileRightColumn": 61,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentColumnSpace": 18.6884765625,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,
@@ -51,6 +62,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "tn947dx4eb",

@@ -15,16 +15,24 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{sku_input.isValid}}",
   "key": "2t39cnlom2",
   "label": "Napęd",
   "labelAlignment": "left",

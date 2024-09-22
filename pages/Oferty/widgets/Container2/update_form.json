@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 38,
+  "bottomRow": 41,
   "bottomRowBeforeCollapse": 89,
   "boxShadow": "none",
   "childStylesheet": {

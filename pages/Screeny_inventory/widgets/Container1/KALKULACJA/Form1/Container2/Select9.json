@@ -51,7 +51,7 @@
   "mobileTopRow": 98,
   "needsErrorInfo": false,
   "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{tkaninawybor.run()}}",
+  "onOptionChange": "{{tkaninawybor.run();\nkosztdoplatytkanina.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 105,
