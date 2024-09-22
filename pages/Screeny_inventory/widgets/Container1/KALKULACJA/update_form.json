@@ -320,15 +320,6 @@
       "key": "schema.__root_schema__.children.powierzchnia.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.cenanetto.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.cenanetto.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.cenanetto.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.vat.defaultValue"
     },
     {
@@ -399,6 +390,15 @@
     },
     {
       "key": "schema.__root_schema__.children.cena.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.cenanetto.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -461,7 +461,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "null",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.cena))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -474,8 +474,7 @@
           "label": "Cena",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cena",
-          "position": 30,
-          "sourceData": "897"
+          "position": 30
         },
         "cenanetto": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -496,7 +495,8 @@
           "label": "Cenanetto",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenanetto",
-          "position": 27
+          "position": 30,
+          "sourceData": null
         },
         "concat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

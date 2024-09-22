@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -41,7 +44,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "optionLabel": "name",
-  "optionValue": "code",
+  "optionValue": "value",
   "parentColumnSpace": 20.21875,
   "parentId": "w811u4s83s",
   "parentRowSpace": 10,
@@ -50,7 +53,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 7,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"PLN\",\n    \"code\": \"PLN\"\n  },\n  {\n    \"name\": \"EUR\",\n    \"code\": \"EUR\"\n  }  \n]",
+  "sourceData": "[\n  {\n    \"name\": \"PLN\",\n    \"value\": \"1\"\n  },\n  {\n    \"name\": \"EUR\",\n    \"value\": \"{{kurseuro.text}}\"\n  }  \n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
