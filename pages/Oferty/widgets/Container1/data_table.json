@@ -325,7 +325,7 @@
       "label": "DODAJ",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  showAlert('id zapiano', 'info');\n});\nstoreValue('kategoria', '\"SCREENY\"').then(() => {\n  showAlert('kategorie zapisano', 'info');\n});\nnavigateTo('Screeny_inventory', {\n  id_oferta: appsmith.store.id_oferta\n}, 'SAME_WINDOW').then(() => {\n  showAlert('przekierowano', 'info');\n});}}",
+      "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {});\nnavigateTo('Screeny_inventory', {\n  id_oferta: appsmith.store.id_oferta\n}, 'SAME_WINDOW').then(() => {});}}",
       "originalId": "customColumn4",
       "sticky": "",
       "textSize": "0.875rem",
