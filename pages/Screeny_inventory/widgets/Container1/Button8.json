@@ -31,7 +31,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{ustawrabat.run()}}",
+  "onClick": "{{ustawrabat.run();\ntabela_inventory_id.run()}}",
   "parentColumnSpace": 19.90625,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE screeny_inventory SET\n    rabatsystem = '{{Input18.text}}',\n   \n  WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE screeny_inventory SET\n    rabatsystem = '{{Input18.text}}' WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
