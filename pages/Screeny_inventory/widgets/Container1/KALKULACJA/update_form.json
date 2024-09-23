@@ -496,7 +496,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenanetto",
           "position": 30,
-          "sourceData": 1112
+          "sourceData": 1216
         },
         "concat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -526,9 +526,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.doplatakolor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "doplatakolor",
           "isCustomField": false,
@@ -540,7 +540,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "doplatakolor",
           "position": 7,
-          "sourceData": "0"
+          "sourceData": 104
         },
         "doplatatkanina": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

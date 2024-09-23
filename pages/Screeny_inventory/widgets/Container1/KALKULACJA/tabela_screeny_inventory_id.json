@@ -299,7 +299,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]+currentRow[\"doplatatkanina\"]))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cena\"]+currentRow[\"doplatatkanina\"]+currentRow[\"doplatakolor\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
