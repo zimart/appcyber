@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 392,
+  "bottomRow": 391,
   "boxShadow": "none",
   "defaultOptionValue": "{{\n            {\n              label: Select12.options[0].label,\n              value: Select12.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "rightColumn": 20,
   "serverSideFiltering": false,
   "sourceData": "{{FORM_system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.valueindeks } })}}",
-  "topRow": 385,
+  "topRow": 384,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "bsrb4o7t5i",
