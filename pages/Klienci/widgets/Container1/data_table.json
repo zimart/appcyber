@@ -73,9 +73,6 @@
   "displayName": "Table",
   "dynamicBindingPathList": [
     {
-      "key": "tableData"
-    },
-    {
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
@@ -134,14 +131,14 @@
     },
     {
       "key": "primaryColumns.customColumn4.buttonColor"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -207,7 +204,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "accountid",
       "notation": "standard",
       "originalId": "accountid",
@@ -388,7 +385,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "imie",
       "notation": "standard",
       "originalId": "imie",
@@ -422,7 +419,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Kod pocztowy",
       "notation": "standard",
       "originalId": "kod",
@@ -490,7 +487,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Nazwisko",
       "notation": "standard",
       "originalId": "nazwiskoklient",
@@ -524,7 +521,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "numer",
       "notation": "standard",
       "originalId": "numer",
@@ -592,7 +589,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Ulica",
       "notation": "standard",
       "originalId": "ulica",

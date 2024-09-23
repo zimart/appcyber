@@ -1,16 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "accentColor": "#15803d",
   "animateLoading": true,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 109,
+  "bottomRow": 151,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1320,
+      "bottomRow": 1370,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -55,7 +55,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 950,
+      "bottomRow": 1370,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,9 +102,6 @@
   "defaultTab": "KALKULACJA - SCREENY",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
       "key": "borderRadius"
     },
     {
@@ -135,7 +132,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 148,
+  "originalBottomRow": 151,
   "originalTopRow": 10,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",

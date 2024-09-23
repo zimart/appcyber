@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,43 +13,60 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "elxt2cdz2s",
-  "label": "Rabat na automatykę",
+  "isVisible": "{{Select11.selectedOptionLabel===\"SCREENY\"}}",
+  "key": "6vwsj7s9ar",
+  "label": "Rabat na system",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 30,
+  "leftColumn": 20,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 37,
-  "mobileRightColumn": 57,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "parentColumnSpace": 19.9375,
-  "parentId": "w811u4s83s",
+  "onTextChanged": "{{ustawrabat.run();\ntabela_inventory_id.run()}}",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.90625,
+  "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 27,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "lhpzqaeuqk",
-  "widgetName": "rabatautomatyka"
+  "widgetId": "gse7krk8qv",
+  "widgetName": "Input18"
 }

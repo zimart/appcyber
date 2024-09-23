@@ -113,6 +113,10 @@
     {
       "id": "Testowe_dodawanie",
       "isDefault": false
+    },
+    {
+      "id": "Oferty3",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
