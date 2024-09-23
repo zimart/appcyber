@@ -8,10 +8,10 @@
       "encodeParamsToggle": true,
       "jsArguments": [
         {
-          "name": "length"
+          "name": "cena"
         },
         {
-          "name": "width"
+          "name": "doplatatkanina"
         }
       ],
       "paginationType": "NONE",
