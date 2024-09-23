@@ -25,7 +25,8 @@ INSERT INTO screeny_inventory (wysokosc,
 															 powierzchnia,
 															 concat,
 															 rodzajpomiaru,
-															 procentdoplatakolor)
+															 procentdoplatakolor,
+														 	ilosc)
   VALUES ('{{wysokosc_input.text}}',
 					'{{szerokosc_input.text}}', 
 					{{index_szer_input.text}},
@@ -53,5 +54,6 @@ INSERT INTO screeny_inventory (wysokosc,
 					'{{powierzchnia.text}}',
 					'{{concat1.text}}',
 				  '{{rodzajwysokosci.selectedOptionLabel}}',
-					'{{doplatakolorinput.text}}'
+					'{{doplatakolorinput.text}}',
+					'{{Input2.text}}'
 				 );
