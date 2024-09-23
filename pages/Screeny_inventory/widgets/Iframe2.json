@@ -3,7 +3,7 @@
   "borderOpacity": 100,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 342,
+  "bottomRow": 343,
   "bottomRowBeforeCollapse": 342,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "dynamicBindingPathList": [
@@ -35,7 +35,7 @@
   "rightColumn": 64,
   "source": "http://zacienione.pl/produkt/markizy/markiza-tarasowa-suri/?model-konstrukcja=3&model-tkanina=5\n",
   "srcDoc": "",
-  "topRow": 260,
+  "topRow": 261,
   "topRowBeforeCollapse": 260,
   "type": "IFRAME_WIDGET",
   "version": 1,

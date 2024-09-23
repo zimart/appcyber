@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 383,
+  "bottomRow": 384,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -120,7 +120,7 @@
   "selectedItemView": "{{{}}}",
   "serverSidePagination": true,
   "templateHeight": 160,
-  "topRow": 343,
+  "topRow": 344,
   "totalRecordsCount": "20",
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
